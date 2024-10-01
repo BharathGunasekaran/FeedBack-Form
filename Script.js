@@ -63,7 +63,14 @@ function check(event){
     return true;
 }
 
-function reset(){
+function reset_form(event){
+    event.preventDefault()
+    if(!feedback.value && feedback.value.trim()==="" && !first.value && first.value.trim()==="" &&
+     !last.value && last.value.trim()==="" && !email.value && email.value.trim()==="" && !DOB.value && DOB.value.trim()==="" &&
+     !phone.value && phone.value.trim()===""){
+        alert("Please fill the feedback form");
+        return false;
+    }
     first.value = last.value = email.value = DOB.value = phone.value = feedback.value = "";
-    return true;
+    return true
 }
