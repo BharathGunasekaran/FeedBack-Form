@@ -12,7 +12,7 @@
     <div id="net">
         <div id="box">
             <h1 id="header">Feedback Form</h1>
-            <form id="content" onsubmit="return check(event)">
+            <form id="content" onsubmit="return check(event)" onreset="return reset()">
                 <div id="name">
                     <div class="firstname">
                         <h4>First Name <span>*</span></h4>
@@ -36,8 +36,10 @@
                     
                     <h4>Feedback <span>*</span></h4>
                     <textarea class="text_box feedback_area" id="bt5" placeholder="Feel free to comment..." ></textarea>
-
-                    <input type="submit" value="Submit" id="submit">
+                    <div class="action">
+                        <input type="reset" value="Reset" id="reset">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
                 </div>
             </form>
         </div>

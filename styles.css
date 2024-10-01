@@ -101,12 +101,29 @@ h4{
     width: 30%;
     background-color: rgb(2, 126, 2);
     color: white;
-    margin-top: 15px;
+    
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
-    margin-left: 35%;
+    margin-left: 50%;
+    margin-bottom: 0%;
+}
+
+.action{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+#reset{
+    border: 1px solid transparent;
+    width: 30%;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
     margin-bottom: 0%;
 }
 

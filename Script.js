@@ -62,3 +62,8 @@ function check(event){
 
     return true;
 }
+
+function reset(){
+    first.value = last.value = email.value = DOB.value = phone.value = feedback.value = "";
+    return true;
+}
