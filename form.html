@@ -6,39 +6,41 @@
     <title>Div Container Example</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="body">
     <div id="net">
         <div id="box">
             <h1 id="header">Feedback Form</h1>
-            <form id="content" onsubmit="return check(event)" onreset="return reset_form(event)">
+            <form id="content" onsubmit="return check(event)" onreset="reset_form(event)" method="POST">
                 <div id="name">
                     <div class="firstname">
                         <h4>First Name <span>*</span></h4>
-                        <input class="text_box" id="first_bt1" type="text" placeholder="Enter your firstname" >
+                        <input class="text_box" id="first_bt1" type="text" placeholder="Enter your firstname" name="first">
                     </div>
                     <div class="lastname">
                         <h4>Last Name <span>*</span></h4>
-                        <input class="text_box" id="last_bt1"  type="text" placeholder="Enter your lastname" >
+                        <input class="text_box" id="last_bt1"  type="text" placeholder="Enter your lastname" name="last">
                     </div>
                 </div>
                 <div class="detail">
                     <h4>Email <span>*</span></h4>
-                    <input class="text_box " id="bt2" type="email" placeholder="Enter your Email" >
+                    <input class="text_box " id="bt2" type="email" placeholder="Enter your Email" name="email">
                     
                     <h4>Date Of Birth <span>*</span></h4>
-                    <input class="text_box" id="bt3" type="date" placeholder="DOB" >
+                    <input class="text_box" id="bt3" type="date" placeholder="DOB" name="date">
                     
                     <h4>Phone <span>*</span></h4>
                     <input class="text_box" id="bt4" type="number" placeholder="Enter your phone number" 
-                    min="999999999" max="9999999999" maxlength="10">
+                    min="999999999" max="9999999999" maxlength="10" name="phone">
                     
                     <h4>Feedback <span>*</span></h4>
-                    <textarea class="text_box feedback_area" id="bt5" placeholder="Feel free to comment..." ></textarea>
+                    <textarea class="text_box feedback_area" id="bt5" placeholder="Feel free to comment..." name="feed"></textarea>
                     <div class="action">
                         <input type="reset" value="Reset" id="reset">
-                        <input type="submit" value="Submit" id="submit">
+                        <input type="submit" value="Submit" id="submit" name="submit">
                     </div>
                 </div>
             </form>
